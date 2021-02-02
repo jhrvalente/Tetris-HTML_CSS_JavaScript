@@ -78,7 +78,7 @@ function redraw(){
 
 			if(counter == 0 && !upRot_flag){
 
-				current_piece.type = 18; //Math.floor(Math.random()*18); //só para testes
+				current_piece.type = Math.floor(Math.random()*18);
 
 
 				switch(current_piece.type){
@@ -122,7 +122,7 @@ function redraw(){
 							break;
 				}
 
-				next_piece.type = 18; //Math.floor(Math.random()*18);
+				next_piece.type = Math.floor(Math.random()*18);
 				setWidth(next_piece);
 
 				switch(next_piece.type){
